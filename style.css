@@ -18,14 +18,18 @@ header {
 .navbar {
     background-color: #111827;
     margin: 0;
-    overflow-x: auto;
     border-bottom: 1px solid rgb(70, 74, 97);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
-
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .navbar li {
     margin: 10px 0;
     list-style: none;
