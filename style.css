@@ -1,11 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     background-color: #0B0F1A;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+:root {
+    --main-color: #ffffff;
+    --sec-color: #9055ff;
+    --about-contact: #b5b7d1;
 }
 
 header {
@@ -22,8 +27,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
 }
 
 .navbar li {
@@ -38,39 +41,39 @@ header {
 
 .navbar a:link {
     text-decoration: none;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 600;
-    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: var(--main-color);
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    letter-spacing: 0.1px;
+    font-size: 1rem;
+    transition: color 0.2s ease-in 0s;
 }
 
 .navbar a:visited {
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .navbar a:hover {
-    color: #f0e3ff;
+    color: #c7c7c7;
 }
 
 .navbar a:active {
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .navbar .logoh1 {
-    font-size: 22px;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
 }
 
-.navbar .dev {
-    color: #ffffff;
-}
-
-.navbar .folio {
-    color: #9055ff;
+.navbar .x {
+    color: var(--sec-color);
 }
 
 .navbar .first {
-    margin-left: -22px;
+    margin-left: -21px;
 
 }
 
@@ -82,25 +85,28 @@ header {
     margin-right: 10px;
     font-size: 16px;
 }
-.last a.activebutton{
+
+.last a.activebutton {
     text-decoration: underline;
-    text-decoration-color: #9055ff;
+    text-decoration-color: var(--sec-color);
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
 }
+
+.container {
+    padding-left: 25px;
+}
+
 .frontend {
-    color: #ffffff59;
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 13px;
-    margin: 12px;
+    color: rgb(70, 74, 97);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
     margin-top: 22px;
-    border: 1px solid rgba(255, 255, 255, 0.062);
+    border: 1px solid rgb(70, 74, 97);
     display: inline-block;
-    padding: 3px;
-    background-color: #ab93e028;
-    border-radius: 14px;
-
-
+    background-color: #0B0F1A;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 main {
@@ -108,116 +114,119 @@ main {
 }
 
 .container .experiences {
-    color: #9055ff;
+    color: var(--sec-color);
 }
 
 .container .mainh1 {
-    color: #ffffff;
+    color: var(--main-color);
     font-family: "Open Sans", sans-serif;
-    font-size: 25px;
-    margin-top: 1px;
+    font-size: 28px;
+    margin-top: 10px;
     text-transform: capitalize;
-    margin-left: 12px;
+    line-height: 30px;
 }
 
 .contactme {
-    color: #ffffff;
-    border: 2px solid #9055ff;
-    background-color: #9055ff59;
+    color: var(--main-color);
+    border: 2px solid var(--sec-color);
+    background-color: var(--sec-color);
     text-decoration: none;
     user-select: none;
-    padding: 6px;
-    margin-left: 12px;
+    padding: 8px 6px;
     margin-top: 10px;
     display: inline-block;
     font-family: "Work Sans", sans-serif;
     font-size: 14px;
-    border-radius: 25px;
+    border-radius: 4px;
+}
+
+.clickhere {
+    color: rgb(70, 74, 97);
 }
 
 .aofcontact a:link {
-    color: #ffffff;
+    color: var(--main-color);
     -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.3s ease-in 0s;
 }
 
 .aofcontact a:hover {
-    background-color: #9055ff;
+    background-color: #9055ff91;
 }
 
 .container .intro {
-    color: #ffffff;
+    color: var(--main-color);
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     width: 300px;
-    margin-left: 12px;
+    margin-top: 20px;
 }
 
 .skillbox {
     display: flex;
-    margin-top: -8px;
-    margin-left: 8px;
+    margin-top: 20px;
+
+
 }
 
 .skill {
+    color: var(--main-color);
+    background-color: #0B0F1A;
     margin: 0 10px;
     padding: 16px 10px;
     text-align: center;
-    justify-self: center;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(123, 104, 228, 0.3);
     border-radius: 10px;
     font-family: "Inter", sans-serif;
-    box-shadow: 0 4px 10px rgba(144, 85, 255, 0.3),
-                0 8px 20px rgba(0, 255, 255, 0.15);
+    box-shadow: 0 4px 10px rgba(116, 104, 228, 0.3);
+
+
 }
 
 .skill1 {
-    background-color: #E34F26;
-    color: #ffffff;
     font-weight: 700;
 }
 
 .skill2 {
-    background-color: #1572B6;
-    color: #ffffff;
     font-weight: 700;
     padding: 16px 16px;
 
 }
 
 .skill3 {
-    background-color: #15b686;
-    color: #ffffff;
     font-weight: 700;
     padding: 16px 16px;
 }
 
 .mskill {
-    color: #9055ff;
+    color: var(--sec-color);
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 45px;
+    font-size: 1.3rem;
 
 }
 
 .h3 {
-    color: #9055ff;
+    color: var(--sec-color);
     font-family: "Work Sans", sans-serif;
-    margin-top: 30px;
-    margin-left: 12px;
+    margin-top: 45px;
+    font-size: 1.3rem;
 }
 
 .aboutmeh3 {
-    margin-left: 12px;
-    margin-top: -11px;
+    margin-top: 11px;
     width: 300px;
-    color: #ffffff;
+    color: var(--main-color);
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .footpara {
-    color: #ffffff;
+    color: var(--main-color);
     margin: 25px 40px;
 
 }
@@ -236,19 +245,19 @@ main {
 }
 
 .lastcontent {
-    color: #9055ff;
+    color: var(--sec-color);
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
-    margin-left: 10px;
-    margin-top: 30px;
+    font-size: 1.3rem;
+    margin-top: 50px;
 }
 
 .points {
-    color: #ffffff;
-    font-family: "Roboto Condensed", sans-serif;
+    color: var(--main-color);
+    font-family: "Open Sans", sans-serif;
     text-transform: capitalize;
-    line-height: 25px;
-    font-size: 16px;
+    line-height: 28px;
+    font-size: 1rem;
 }
 
 .about {
@@ -257,23 +266,45 @@ main {
     text-align: center;
 }
 
-.about h2 {
-    color: #ffffff;
+.firstabout h2 {
+    color: var(--main-color);
     font-family: "Inter", sans-serif;
-    font-size: 26px;
+    font-size: 1.8rem;
+    margin-left: 22px;
+    margin-top: 25px;
 }
 
-.about .me {
-    color: #9055ff;
+.firstabout .me {
+    color: var(--sec-color);
 }
 
-.about p {
-    color: #b5b7d1;
+.about>div {
+    color: var(--main-color);
     font-family: "Inter", sans-serif;
-    margin: 20px 50px;
-    border-bottom: 3px solid #b5b7d1;
-    padding-bottom: 20px;
+    border: 2px solid white;
+    margin: 10px 10vw;
+    padding: 3vh 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
 
+
+}
+
+.about>div svg {
+    margin: 0 15px;
+    margin-left: 8px;
+}
+
+.iconorname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.introname {
+    color: var(--about-contact);
+    font-size: 0.9rem;
 }
 
 section {
@@ -281,204 +312,305 @@ section {
 }
 
 .contactof {
-    color: #ffffff;
+    color: var(--main-color);
     font-family: "Inter", sans-serif;
-    font-size: 26px;
+    font-size: 1.8rem;
+    margin-left: 22px;
+    margin-top: 25px;
+
 }
 
 .contme {
-    color: #9055ff;
+    color: var(--sec-color);
 }
 
-.fullcontact {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.firstpara {
-    color: #b5b7d1;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    border-bottom: 3px solid #b5b7d1;
-    padding-bottom: 20px;
-
-}
-.secpara{
-    margin-top: 30px;
-}
-.firstcontainer{
-    margin: 10px 15vw;
-    text-align: center;
-}
-.no {
-    color: #9055ff;
-    font-family: "Roboto Condensed", sans-serif;
-    padding-bottom: 15px;
-    padding: 2px 50px;
-}
-
-.no a:link {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 12px;
-}
-.no a:visited{
-    color: #ffffff;
-}
-.no a:hover{
+.iconorname a:link {
+    color: var(--main-color);
     text-decoration: underline;
-    text-decoration-color: #a6caff;
+    transition: color 0.2s ease-in 0s;
 }
 
-@media only screen and (min-width: 500px) {
+.iconorname a:visited {
+    color: var(--main-color);
+}
+
+.iconorname a:hover {
+    color: var(--sec-color);
+    text-decoration: underline;
+
+}
+
+.iconorname a:active {
+    color: var(--main-color);
+}
+
+@media only screen and (min-width: 480px) {
     .navbar li {
-        margin: 26px 0;
+        margin: 25px 0;
     }
+
     .navbar .last li {
-    margin: 10px 14px;
-}
-.navbar .logoh1 {
-    font-size: 30px;
-}
-.navbar .last {
-    margin-right: 10px;
-    font-size: 19px;
-}
-.frontend{
-    font-size: 15px;
-}
-.container .mainh1 {
-    font-size: 30px;
-    margin-top: 2px;
-    margin-left: 14px;
-}
+        margin: 25px 16px;
+    }
 
-.contactme {
-    padding: 10px;
-    margin-left: 14px;
-    margin-top: 12px;
-    font-size: 15px;
-}
+    .navbar a:link {
+        font-weight: 550;
+        letter-spacing: 0.5px;
+        font-size: 1.05rem;
+    }
 
-.container .intro {
-    font-size: 16px;
-    width: 400px;
-    margin-left: 14px;
-}
+    .navbar .logoh1 {
+        font-size: 1.6rem;
+        font-family: "Open Sans", sans-serif;
+    }
 
-.skillbox {
-    margin-top: -5px;
-}
+    .navbar .first {
+        margin-left: -15px;
 
-.skill {
-    margin: 0 10px;
-    padding: 18px 12px;
-}
+    }
 
+    .navbar .last {
+        margin-right: 10px;
+    }
 
-.skill2 {
-    padding: 16px 19px;
+    .last a.activebutton {
+        text-decoration-thickness: 3.5px;
+        text-underline-offset: 13px;
+    }
 
-}
+    .container {
+        padding-left: 2rem;
+    }
+
+    .frontend {
+        font-size: 1rem;
+        margin-top: 30px;
+        border-radius: 7px;
+        padding: 4px;
+    }
 
 
-.mskill {
-    margin-left: 14px;
-    margin-top: 35px;
-    font-size: 24px;
+    .container .mainh1 {
+        font-size: 2rem;
+        margin-top: 15px;
+        line-height: 32px;
+    }
 
-}
+    .contactme {
+        padding: 10px 8px;
+        margin-top: 15px;
+        font-size: 1rem;
+    }
 
-.h3 {
-    margin-top: 35px;
-    margin-left: 14px;
-    font-size: 24px;
-}
+    .container .intro {
+        font-size: 1.1rem;
+        width: 350px;
+        margin-top: 25px;
+    }
 
-.aboutmeh3 {
-    margin-left: 14px;
-    margin-top: -11px;
-    width: 400px;
-    font-size: 16px;
-}
+    .skillbox {
+        margin-top: 25px;
+    }
 
-.lastcontent {
-    margin-left: 14px;
-    margin-top: 35px;
-    font-size: 24px;
-}
-
-.points {
-    line-height: 27px;
-    font-size: 17px;
-}
-
-.about h2 {
-    font-size: 30px;
-}
-
-.about p {
-    margin: 20px 70px;
-    font-size: 18px;
-}
-
-.contactof {
-    font-size: 30px;
-}
+    .skill {
+        margin: 0 15px;
+        padding: 26px 20px;
+        font-size: 1.1rem;
+    }
 
 
-.firstpara {
-    font-size: 18px;
-}
+    .skill2 {
+        padding: 16px 26px;
 
-.no {
-    font-size: 18px;
-}
+    }
 
+    .skill3 {
+        padding: 16px 20px;
+    }
+
+    .mskill {
+        margin-top: 45px;
+        font-size: 1.6rem;
+
+    }
+
+    .h3 {
+        font-size: 1.6rem;
+    }
+
+    .aboutmeh3 {
+        margin-top: 15px;
+        width: 350px;
+        font-size: 1.1rem;
+    }
+
+    .footpara {
+        margin: 28px 40px;
+
+    }
+
+    .footer {
+        font-size: 1rem;
+
+    }
+
+    .lastcontent {
+        font-size: 1.6rem;
+        margin-top: 55px;
+    }
+
+    .points {
+        line-height: 30px;
+        font-size: 1.1rem;
+    }
+
+    .firstabout h2 {
+        font-size: 2rem;
+        margin-left: 32px;
+        margin-top: 25px;
+    }
+
+    .about>div {
+        margin: 10px 10vw;
+        padding: 5vh 10px;
+        border-radius: 10px;
+
+
+    }
+
+    .about>div svg {
+        margin: 0 20px;
+        margin-left: 14px;
+    }
+
+    .introname {
+        font-size: 1rem;
+    }
+
+    .contactof {
+        font-size: 2rem;
+        margin-left: 32px;
+        margin-top: 25px;
+
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-  
-.about p {
-    margin: 20px 280px;
-}
+    .navbar li {
+        margin: 20px 0;
+    }
 
-.no {
-    font-size: 18px;
-    margin-top: 30px;
-}
-.container .intro {
-    font-size: 18px;
-}
-.mskill{
-    font-size: 28px;
-}
-.h3{
-    font-size: 28px;
-}
-.aboutmeh3{
-    font-size: 18px;
-}
-.lastcontent{
-    font-size: 28px;
-}
-.points{
-    font-size: 20px;
-}
-.about h2{
-    font-size: 35px;
-}
-.about p{
-    font-size: 20px;
-}
-.contactof{
-    font-size: 35px;
-}
-.firstpara{
-    font-size: 20px;
-}
-.no{
-    font-size: 20px;
-}
+    .navbar .last li {
+        margin: 20px 16px;
+    }
+
+    .navbar a:link {
+        font-weight: 650;
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+    }
+
+    .navbar .logoh1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar .first {
+        margin-left: -10px;
+    }
+
+    .navbar .last {
+        margin-right: 5px;
+    }
+
+    .container {
+        padding-left: 2rem;
+    }
+
+    .container .mainh1 {
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+
+    .contactme {
+        font-size: 1.1rem;
+        margin-top: 1.8rem;
+    }
+
+    .container .intro {
+        font-size: 1.3rem;
+        width: 800px;
+        margin-top: 30px;
+    }
+
+    .skillbox {
+        margin-top: 2.5rem;
+    }
+
+    .skill {
+        font-size: 1.3rem;
+    }
+
+    .mskill {
+        font-size: 2rem;
+
+    }
+
+    .h3 {
+        font-size: 2rem;
+    }
+
+    .aboutmeh3 {
+        width: 900px;
+        font-size: 1.3rem;
+    }
+
+    .lastcontent {
+        font-size: 1.8rem;
+    }
+
+    .points {
+        line-height: 2.5rem;
+        font-size: 1.3rem;
+    }
+
+    .firstabout h2 {
+        font-size: 2.5rem;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+    .about {
+        margin-bottom: 2rem;
+    }
+
+    .about>div {
+        margin: 10px 10vw;
+        padding: 5vh 10px;
+        border-radius: 10px;
+
+    }
+
+    .about>div svg {
+        margin: 0 30px;
+        margin-left: 25px;
+    }
+
+    .introname {
+        font-size: 1.2rem;
+    }
+
+    .contactof {
+        font-size: 2.5rem;
+        margin-left: 40px;
+        margin-top: 30px;
+
+    }
+
+    .iconorname a:link {
+        font-size: 1.2rem;
+    }
+
+    .workname {
+        font-size: 1.2rem;
+    }
 }
