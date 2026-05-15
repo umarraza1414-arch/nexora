@@ -137,9 +137,9 @@ main {
 }
 
 .contactme {
-    color: var(--main-color);
+    color: black;
     border: 2px solid rgb(191, 166, 231);
-    background-color: rgb(52, 24, 128);
+    background-color: var(--sec-color);
     text-decoration: none;
     user-select: none;
     padding: 8px 6px;
