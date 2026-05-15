@@ -365,8 +365,8 @@ section {
 
     .navbar a:link {
         font-weight: 550;
-        letter-spacing: 0.5px;
-        font-size: 1.05rem;
+        letter-spacing: 0.4px;
+        font-size: 1.1rem;
     }
 
     .navbar .logoh1 {
