@@ -213,7 +213,7 @@ main {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
     margin-top: 45px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 
 }
 
@@ -221,7 +221,7 @@ main {
     color: var(--sec-color);
     font-family: "Work Sans", sans-serif;
     margin-top: 45px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .aboutmeh3 {
@@ -255,7 +255,7 @@ main {
     color: var(--sec-color);
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 50px;
 }
 
@@ -437,12 +437,12 @@ section {
 
     .mskill {
         margin-top: 45px;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
 
     }
 
-    .h3 {
-        font-size: 1.6rem;
+    .ah3 {
+        font-size: 1.7rem;
     }
 
     .aboutmeh3 {
@@ -462,7 +462,7 @@ section {
     }
 
     .lastcontent {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         margin-top: 55px;
     }
 
@@ -558,12 +558,12 @@ section {
     }
 
     .mskill {
-        font-size: 2rem;
+        font-size: 2.1rem;
 
     }
 
-    .h3 {
-        font-size: 2rem;
+    .ah3 {
+        font-size: 2.1rem;
     }
 
     .aboutmeh3 {
@@ -572,7 +572,7 @@ section {
     }
 
     .lastcontent {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     }
 
     .points {
