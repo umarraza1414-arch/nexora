@@ -146,13 +146,14 @@ main {
     margin-top: 10px;
     display: inline-block;
     font-family: "Work Sans", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
+    font-weight: 500;
 }
 
 
 .aofcontact a:link {
-    color: var(--main-color);
+    color: black;
     -webkit-tap-highlight-color: transparent;
     transition: background-color 0.3s ease-in 0s;
 }
